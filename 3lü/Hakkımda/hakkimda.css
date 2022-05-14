@@ -1,5 +1,16 @@
 body{
     background-color: #EDE6DB;
-    color: #1A3C40;
     font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-weight: bold;
+    color: #1A3C40;
+}
+h2{
+    color: #1A3C40;
+    font-weight: bold;
+}
+p{
+    font-weight: 600;
+    color: #071c1f;
 }
