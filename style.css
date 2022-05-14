@@ -8,11 +8,17 @@ body {
   margin-top: 10px;
   padding: 5px;
 }
+h1,h2{
+    font-weight: bold;
+}
+p,li {
+    font-weight: 500;
+} 
 .linkler {
   position: relative;
   text-align: center;
-  margin: 8px;
-  padding: 8px;
+  margin: 0.3%;
+  padding: 0.2%;
   border: 1px solid black;
 }
 .linkler-foto {
@@ -29,26 +35,26 @@ body {
   left: 0%;
   right: 0%;
   bottom: 0;
-  font-size: 15px;
+  font-size: 1em;
 }
 nav {
   border: 1px solid black;
   padding: 5px;
 }
 .yonlendirme {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0.4%;
+  margin-bottom: 0.4%;
   border: 1px solid black;
-  padding: 5px;
+  padding: 0.3%;
 }
 footer {
   border: 1px solid black;
-  padding: 5px;
+  padding: 0.2%;
 }
 .flex-iletisim-logolar {
   display: flex;
 }
 .flex-iletisim-logolar > div {
   width: 40px;
-  margin: 10px;
+  margin: 0.2%;
 }
