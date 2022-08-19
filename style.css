@@ -89,12 +89,18 @@ main > div {
     font-size: 50px;
     color: #ed5564;
 }
+.top-logo::-webkit-scrollbar {
+    display: none;
+  }
 .top { 
     left: 7%;
     width: 93vw;
     height: 10vh;
     background:var(--lessdarker);
 }
+.top::-webkit-scrollbar {
+    display: none;
+  }
 .top ul {
     display: flex;
     justify-content: right;
@@ -140,6 +146,9 @@ main > div {
     width: 93vw;
     height: 90vh;
 }
+.content::-webkit-scrollbar {
+    display: none;
+  }
 .top-link {
     font-size: 25px;
     position: absolute;
