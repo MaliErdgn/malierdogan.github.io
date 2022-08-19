@@ -1,121 +1,53 @@
 <!DOCTYPE html>
-<html lang="tr">
-  <head>
-    <link rel="stylesheet" href="./style.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mali</title>
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mali Erdoğan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="main-intro">
+        <div class="swipe">
+            <img src="/photos/IntroBg.JPG" alt="" class="background-photo">
+        </div>
+        <div class="slide">
+            <button class="intro" onclick="introButton()">Mali</button>
+        </div>
+        <div class="loading-page"><p></p></div>
+        <div id="click-intro">
+            <h1 id="click-to-go-on">Click Anywhere</h1>
+        </div>
+    </div> -->
+    <main>
+        <div class="top-logo">
+            <p>Mali</p>
+        </div>
+        <div class="top">
+            <ul>
+                <li><a href="#introduction" class="active">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#">Experiences</a></li>
+                <li><a href="#" id="contact">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="left-bar">
 
-  <body>
-    <div id="topnav">
-      <a href="./index.html">Başlangıç Sayfası</a>
-      <a href="./3lü/Kendi Yazılarım/kendiYazilarim.html">Yazılarım</a>
-      <a href="./3lü/Yazılar/yazilar.html">Genel Yazılar</a>
-      <a href="./3lü/Hakkımda/hakkimda.html">Hakkımda</a>
-      <div class="iletisim">
-        <button class="dropdown">
-          İletişim <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="iletisim-icerik">
-          <a href="https://instagram.com/mallyerdgn">Instagram</a>
-          <a href="https://twitter.com/BuMaliMalibu">Twitter</a>
         </div>
-      </div>
-    </div>
-    <div id="content">
-      <script src="./index.js"></script>
-      <nav>
-        <h1 class="start">Malinin Blogu</h1>
-        <h2>İçerikler:</h2>
-        <ul>
-          <li>Kendi Yazdığım Yazılar</li>
-          <li>İlginç ve bilgilendirici yazılar</li>
-          <li>Ben Kimim</li>
-        </ul>
-      </nav>
-      <button onclick="topFunction()" id="myBtn" title="Go to top">
-        Tepeye Çık
-      </button>
-      <div class="introduction">
-        <h2>Hakkımda</h2>
-        <p>
-          Merhaba, ben Mehmet Ali Erdoğan. 19 yaşında bir bilgisayar
-          mühendisliği öğrencisiyim. Html,Css ve Javascript hakkında bir sandbox
-          olarak kullanmak üzere bu sayfayı oluşturdum. Tüm denemelerimi ve
-          uygulamalarımı burda deneyeceğim. Ancak bu denemelerin çoğunu burda da
-          vereceğim bir linkte yapacağım ana sayfada karşınıza çıkmayacak. Ana
-          sayfada yukarda bahsedilen 3 konudan birini seçip onlarla alakalı
-          yazılarımı okuyabilirsiniz.
-        </p>
-      </div>
-      <main>
-        <section class="yonlendirme">
-          <a href="./3lü/Kendi Yazılarım/kendiYazilarim.html" target="_self">
-            <div class="linkler">
-              <img
-                class="linkler-foto"
-                src="https://picsum.photos/1650/200"
-                alt=""
-              />
-              <div class="linkler-text">
-                <article>
-                  <h2>Kendi Yazılarım</h2>
-                </article>
-              </div>
+        <div class="content">
+            <div class="introduction" id="introduction">
+            <h1 id="introductionh1">Welcome To My Portfolio Site</h1>
+            <hr id="hello">
+            <p class="intro-content">Im Mali and this is my portfolio site.</p>
             </div>
-          </a>
-          <a href="./3lü/Yazılar/yazilar.html" target="_self">
-            <div class="linkler">
-              <img
-                class="linkler-foto"
-                src="https://picsum.photos/1650/200"
-                alt=""
-              />
-              <div class="linkler-text">
-                <article>
-                  <h2>Güzel Yazılar</h2>
-                </article>
-              </div>
-            </div>
-          </a>
-          <a href="./3lü/Hakkımda/hakkimda.html">
-            <div class="linkler">
-              <img
-                class="linkler-foto"
-                src="https://picsum.photos/1650/200"
-                alt=""
-              />
-              <div class="linkler-text">
-                <article>
-                  <h2>Ben Kimim</h2>
-                </article>
-              </div>
-            </div>
-          </a>
-        </section>
-      </main>
-      <footer>
-        <h1>İletişim Bilgilerim:</h1>
-        <div class="flex-iletisim-logolar">
-          <div class="instagram-logo">
-            <a href="https://instagram.com/mallyerdgn" target="_blank">
-              <img src="./İmages/Instagram_logo_2016.png" alt="" width="40" />
-            </a>
-          </div>
-          <div class="twitter-logo">
-            <a href="https://twitter.com/BuMaliMalibu" target="_blank">
-              <img
-                src="./İmages/twitterlogo.png"
-                alt=""
-                width="40"
-                height="40"
-              />
-            </a>
-          </div>
+        <div class="about-me" id="about-me">
+            <h1 id="about-me-h1">About Me:</h1>
+            <p id="about-me-content">My name is Mehmet Ali Erdoğan. Im a 20 year old student. I study computer engineering + management information systems. <br> <br>  I live in Istanbul, Turkey. My hobbies include coding, hanging around with friends, most of the sports and trying out new things. <br> <br> I am a joyful person that tries to share the joy with others too. Im not a workaholic but when I see a problem in my code I can spend a night just to fix that one error. <br><br> I go around making jokes every second and try to make everyone else laugh with me. When it comes to board games I would say Im super competitive because where is the fun without a little salt and trash talk. </p>
+            <img src="./photos/Myphoto.jpg" alt="myphoto" id="myphoto">
         </div>
-      </footer>
-    </div>
-  </body>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
 </html>
