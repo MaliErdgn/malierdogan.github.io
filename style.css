@@ -1,3 +1,8 @@
+:root {
+    --lessDarker: #264653;
+    --yazilar: #f4a261;
+}
+
 * {
     scroll-behavior: smooth;
     /* height: auto; */
@@ -7,6 +12,7 @@ body
 {
     font-family: 'Helvetica', 'Arial', sans-serif;
     margin: 0;
+    background: var(--lessDarker);
 }
 /* .swipe{
     right: 0;
@@ -73,9 +79,10 @@ main > div {
     z-index: -2;
 }
 .top-logo {
-    background: rgb(25,25,25);
+    background: var(--lessDarker);
     width: 7vw;
     height: 10vh;
+    display: grid;
 }
 .top-logo > p {
     margin: 2vh;
@@ -86,7 +93,7 @@ main > div {
     left: 7%;
     width: 93vw;
     height: 10vh;
-    background: rgb(25,25,25);
+    background:var(--lessdarker);
 }
 .top ul {
     display: flex;
@@ -102,32 +109,32 @@ main > div {
 .top ul li a {
     text-decoration: none;
     padding: 6px 15px;
-    color: #faa781;
+    color: var(--yazilar);
     font-size: x-large;
     border-radius: 20px;
 }
 .top ul li a:hover
 {
-    background: #faa781;
-    color: rgb(29, 29, 29);
+    background: var(--yazilar);
+    color: var(--lessDarker);
 }
 .active {
-    background: #faa781;
-    color: rgb(29, 29, 29)!important;
+    background: var(--yazilar);
+    color: var(--lessDarker) !important;
 }
 #contact {
     margin-right: 30px;
 }
 .left-bar {
-    background: rgb(25,25,25);
+    background:var(--lessdarker);
     top: 10%;
     width: 7vw;
     height: 90vh;
 }
 .content {
-    border-top: #4ba3c7 1px solid;
-    border-left: #4ba3c7 1px solid;
-    background: rgb(29, 29, 29);
+    /* border-top: #4ba3c7 1px solid;
+    border-left: #4ba3c7 1px solid; */
+    background: var(--lessDarker);
     top: 10%;
     left: 7%;
     width: 93vw;
@@ -138,24 +145,23 @@ main > div {
     position: absolute;
     top: 40%;
     text-decoration: none;
-    color: #faa781;
+    color: var(--yazilar);
 }
 #introductionh1{
     left: 20%;
     top: 7.5%;
-    color: #faa781;
+    color: var(--yazilar);
     font-size: 50px;
 }
 #hello {
-    position: absolute;
-    top: 20%;
+    position: relative;
+    /* top: 20%; */
     border-top: solid #4ba3c7;
     border-radius: 2px;
     width: 100%;
-    margin-top: 15px;
 }
 .intro-content {
-    color: #faa781;
+    color: var(--yazilar);
     font-size: 40px;
     width: 83.3%;
 }
@@ -175,12 +181,12 @@ main > div {
     top: 110%;
 }
 .about-me p {
-    color: #faa781;
+    color: var(--yazilar);
     font-size: larger;
 }
 #about-me-h1 {
     position: relative;
-    color: #faa781;
+    color: var(--yazilar);
     font-size: 50px;
     margin-top: 100px;
 }
