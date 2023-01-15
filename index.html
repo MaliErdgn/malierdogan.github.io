@@ -1,53 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mali Erdoğan</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- <div class="main-intro">
-        <div class="swipe">
-            <img src="/photos/IntroBg.JPG" alt="" class="background-photo">
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="TempatureConverter">
+      <button id="tempatureConverter" onclick="tempatureConverter()">
+        Tempature Converter
+      </button>
+      <button id="temp-go-back" onclick="tempGoBack()">Go Back</button>
+      <div id="tempature-menu">
+        <p>Choose a conversion type</p>
+        <div id="tempature-grid">
+          <div class="temp-item">
+            <button id="C-K" onclick="celciusToKelvin()">
+              Celcius to Kelvin
+            </button>
+            <input type="number" id="CtoKInput" placeholder="Enter your value" />
+            <input
+              type="submit"
+              id="CtoKSubmit"
+              onclick="celciusToKelvinCalc()"
+            />
+          </div>
+          <div class="temp-item">
+            <button id="C-F" onclick="celciusToFahrenheit()">
+              Celcius to Fahrenheit
+            </button>
+            <input type="number" id="CtoFInput" placeholder="Enter your value" />
+            <input
+              type="submit"
+              id="CtoFSubmit"
+              onclick="celciusToFahrenheitCalc()"
+            />
+          </div>
+          <div class="temp-item">
+            <button id="F-K" onclick="fahrenheitToKelvin()">
+              Fahrenheit to Kelvin
+            </button>
+            <input type="number" id="FtoKInput" placeholder="Enter your value" />
+            <input
+              type="submit"
+              id="FtoKSubmit"
+              onclick="fahrenheitToKelvinCalc()"
+            />
+          </div>
+          <div class="temp-item">
+            <button id="F-C" onclick="fahrenheitToCelcius()">
+              Fahrenheit to Celcius
+            </button>
+            <input type="number" id="FtoCInput" placeholder="Enter your value" />
+            <input
+              type="submit"
+              id="FtoCSubmit"
+              onclick="fahrenheitToCelciusCalc()"
+            />
+          </div>
+          <div class="temp-item">
+            <button id="K-C" onclick="kelvinToCelcius()">
+              Kelvin to Celcius
+            </button>
+            <input type="number" id="KtoCInput" placeholder="Enter your value" />
+            <input
+              type="submit"
+              id="KtoCSubmit"
+              onclick="kelvinToCelciusCalc()"
+            />
+          </div>
+          <div class="temp-item">
+            <button id="K-F" onclick="kelvinToFahrenheit()">
+              Kelvin to Fahrenheit
+            </button>
+            <input type="number" id="KtoFInput" placeholder="Enter your value" />
+            <input
+              type="submit"
+              id="KtoFSubmit"
+              onclick="kelvinToFahrenheitCalc()"
+            />
+          </div>
+          <p id="results"></p>
         </div>
-        <div class="slide">
-            <button class="intro" onclick="introButton()">Mali</button>
-        </div>
-        <div class="loading-page"><p></p></div>
-        <div id="click-intro">
-            <h1 id="click-to-go-on">Click Anywhere</h1>
-        </div>
-    </div> -->
-    <main>
-        <div class="top-logo">
-            <p>Mali</p>
-        </div>
-        <div class="top">
-            <ul>
-                <li><a href="#introduction" class="active">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#">Experiences</a></li>
-                <li><a href="#" id="contact">Contact Me</a></li>
-            </ul>
-        </div>
-        <div class="left-bar">
-
-        </div>
-        <div class="content">
-            <div class="introduction" id="introduction">
-            <h1 id="introductionh1">Welcome To My Portfolio Site</h1>
-            <hr id="hello">
-            <p class="intro-content">Im Mali and this is my portfolio site.</p>
-            </div>
-        <div class="about-me" id="about-me">
-            <h1 id="about-me-h1">About Me:</h1>
-            <p id="about-me-content">My name is Mehmet Ali Erdoğan. I'm a 20 year old student. I study computer engineering + management information systems. <br> <br>  I live in Istanbul, Turkey. My hobbies include coding, hanging around with friends, most of the sports and trying out new things. <br> <br> I am a joyful person that tries to share the joy with others too. Im not a workaholic but when I see a problem in my code I can spend a night just to fix that one error. <br><br> I go around making jokes every second and try to make everyone else laugh with me. When it comes to board games I would say Im super competitive because where is the fun without a little salt and trash talk. </p>
-            <img src="./photos/Myphoto.jpg" alt="myphoto" id="myphoto">
-        </div>
-        </div>
-    </main>
-    <script src="script.js"></script>
-</body>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>

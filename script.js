@@ -1,68 +1,177 @@
-// const loadText = document.querySelector(".loading-page");
-// const background = document.querySelector(".background-photo");
-// const intro = document.querySelector(".main-intro");
-// const introBut = document.querySelector(".intro");
-// const swipe = document.querySelector(".swipe");
-// const clicktogoon = document.querySelector("#click-to-go-on");
-// const main = document.querySelector("main");
-// const clickIntro = document.querySelector(".click-intro");
-// const introButto = document.querySelector(".slide");
+//#region Tempature Converter
 
-// let load = 0;
-// let loadTwo = 0;
+//#region variables
+const tempatureConverterButton = document.getElementById("tempatureConverter");
+const tempatureMenu = document.getElementById("tempature-menu");
+const tempatureGrid = document.getElementById("tempature-grid");
+const tempgoBack = document.getElementById("temp-go-back");
 
-// let loadedAmount = setInterval(blurring, 40);
-// const antiOpa = setInterval (antiOpacity,50);
+const CK = document.getElementById("C-K");
+const CF = document.getElementById("C-F");
+const FC = document.getElementById("F-C");
+const FK = document.getElementById("F-K");
+const KC = document.getElementById("K-C");
+const KF = document.getElementById("K-F");
 
+const CtoKInput = document.getElementById("CtoKInput");
+const CtoFInput = document.getElementById("CtoFInput");
+const FtoKInput = document.getElementById("FtoKInput");
+const FtoCInput = document.getElementById("FtoCInput");
+const KtoFInput = document.getElementById("KtoFInput");
+const KtoCInput = document.getElementById("KtoCInput");
+const CtoKSubmit = document.getElementById("CtoKSubmit");
+const CtoFSubmit = document.getElementById("CtoFSubmit");
+const FtoKSubmit = document.getElementById("FtoKSubmit");
+const FtoCSubmit = document.getElementById("FtoCSubmit");
+const KtoFSubmit = document.getElementById("KtoFSubmit");
+const KtoCSubmit = document.getElementById("KtoCSubmit");
+const results = document.getElementById("results");
+//#endregion
+function tempatureConverter() {
+  tempatureGrid.style.display = "block";
+  tempatureConverterButton.style.display = "none";
+  tempatureMenu.style.display = "grid";
+  tempatureGrid.style.gridTemplateColumns = "auto auto";
+  tempatureGrid.style.padding = "10px";
+}
 
-// function antiOpacity () {
-//     loadTwo++
-//     console.log(loadTwo)
-//     if (loadTwo > 180) {
-//         clearInterval(antiOpa)
-//     }
-//     clicktogoon.style.opacity = loadTwo-100 +"%";
-// }
+function tempGoBack() {
+  tempatureGrid.style.display = "grid";
+  tempatureGrid.style.gridTemplateColumns = "auto auto";
+  tempatureGrid.style.padding = "10px";
+  CK.style.display = "block";
+  CF.style.display = "block";
+  FC.style.display = "block";
+  FK.style.display = "block";
+  KC.style.display = "block";
+  KF.style.display = "block";
+  CtoKInput.style.display = "none";
+  CtoFInput.style.display = "none";
+  FtoKInput.style.display = "none";
+  FtoCInput.style.display = "none";
+  KtoFInput.style.display = "none";
+  KtoCInput.style.display = "none";
+  CtoKSubmit.style.display = "none";
+  CtoFSubmit.style.display = "none";
+  FtoKSubmit.style.display = "none";
+  FtoCSubmit.style.display = "none";
+  KtoFSubmit.style.display = "none";
+  KtoCSubmit.style.display = "none";
+  results.style.display = "none";
+}
+//#region conversions
+function celciusToKelvin() {
+  CF.style.display = "none";
+  FC.style.display = "none";
+  FK.style.display = "none";
+  KC.style.display = "none";
+  KF.style.display = "none";
+  CtoKInput.style.display = "block";
+  CtoKSubmit.style.display = "block";
+  tempgoBack.style.display = "block";
+}
+function celciusToKelvinCalc() {
+  var enteredValue = document.getElementById("CtoKInput").value;
+  enteredValue = parseFloat(enteredValue);
+  var result = 0;
+  result = enteredValue + 273.15;
+  document.getElementById("results").innerHTML = result + " Kelvin";
+  results.style.display = "block";
+}
 
-// function blurring() {
-//     load++;
-    
-//     if(load > 99) {
-//         clearInterval(loadedAmount);
-//         loadText.style.display = "none";
-//         clicktogoon.style.display = "block";
-//         antiOpacity();
-//     }
-//     loadText.style.opacity = scale(load, 0, 100, 1, 0);
-//     background.style.filter = `blur(${scale(load, 0, 100, 40, 0)}px)`;
-//     loadText.innerHTML= "Welcome"
-// }
+function celciusToFahrenheit() {
+  CK.style.display = "none";
+  FC.style.display = "none";
+  FK.style.display = "none";
+  KC.style.display = "none";
+  KF.style.display = "none";
+  CtoFInput.style.display = "block";
+  CtoFSubmit.style.display = "block";
+  tempgoBack.style.display = "block";
+}
+function celciusToFahrenheitCalc() {
+  var enteredValue = document.getElementById("CtoFInput").value;
+  enteredValue = parseFloat(enteredValue);
+  var result = 0;
+  result = (enteredValue * 9) / 5 + 32;
+  document.getElementById("results").innerHTML = result + " Fahrenheit";
+  results.style.display = "block";
+}
 
-// const scale = (num, in_min, in_max, out_min, out_max) => {
-//     return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
-// }
+function fahrenheitToKelvin() {
+  CK.style.display = "none";
+  CF.style.display = "none";
+  FC.style.display = "none";
+  KC.style.display = "none";
+  KF.style.display = "none";
+  FtoKInput.style.display = "block";
+  FtoKSubmit.style.display = "block";
+  tempgoBack.style.display = "block";
+}
+function fahrenheitToKelvinCalc() {
+  var enteredValue = document.getElementById("FtoKInput").value;
+  enteredValue = parseFloat(enteredValue);
+  var result = 0;
+  result = ((enteredValue - 32) * 5) / 9 + 273;
+  document.getElementById("results").innerHTML = result + " Kelvin";
+  results.style.display = "block";
+}
 
-// function introButton(){
-//     if (load > 99){
-//         background.style.transition = "transform 1.5s ease-in-out";
-//         background.style.transform = 'translateX(-100%)'; //foto kayma
-//         clicktogoon.style.transition = "transform 1.5s ease-in-out";
-//         clicktogoon.style.transform = 'translateX(100vw)'; //yazı kayma
-//         // clickIntro.style.transition = "transform 1.5s ease-in-out";
-//         // clickIntro.style.transform = 'translateX(-100vw)';
-//         // introButto.style.transition = "transform 1.5s ease-in-out";
-//         // introButto.style.transform = 'translateX(-100vw)';
-//         introBut.style.display = "none";
-//         main.style.transition = "transform 1.5s ease-in-out";
-//         main.style.transform = "translateX(-1920)"; // arkadakilerin gelmesi
-//     setTimeout(function(){
-//     intro.style.display = "none"
-//     },2000)
-// }
-// }
-// let top = document.getElementsByClassName('topnavs')
+function fahrenheitToCelcius() {
+  CK.style.display = "none";
+  CF.style.display = "none";
+  KC.style.display = "none";
+  KF.style.display = "none";
+  FK.style.display = "none";
+  FtoCInput.style.display = "block";
+  FtoCSubmit.style.display = "block";
+  tempgoBack.style.display = "block";
+}
+function fahrenheitToCelciusCalc() {
+  var enteredValue = document.getElementById("FtoCInput").value;
+  enteredValue = parseFloat(enteredValue);
+  var result = 0;
+  result = ((enteredValue - 32) * 5) / 9;
+  document.getElementById("results").innerHTML = result + " Celcius";
+  results.style.display = "block";
+}
 
-// window.addEventListener('scroll', function(){
-//     let value = window.scrollY;
-//     top.style.top = value + 'px';
-// })
+function kelvinToCelcius() {
+  CK.style.display = "none";
+  CF.style.display = "none";
+  KF.style.display = "none";
+  FK.style.display = "none";
+  FC.style.display = "none";
+  KtoCInput.style.display = "block";
+  KtoCSubmit.style.display = "block";
+  tempgoBack.style.display = "block";
+}
+function kelvinToCelciusCalc() {
+  var enteredValue = document.getElementById("KtoCInput").value;
+  enteredValue = parseFloat(enteredValue);
+  var result = 0;
+  result = enteredValue - 273.15;
+  document.getElementById("results").innerHTML = result + " Celcius";
+  results.style.display = "block";
+}
+
+function kelvinToFahrenheit() {
+  CK.style.display = "none";
+  CF.style.display = "none";
+  KC.style.display = "none";
+  FK.style.display = "none";
+  FC.style.display = "none";
+  KtoFInput.style.display = "block";
+  KtoFSubmit.style.display = "block";
+  tempgoBack.style.display = "block";
+}
+function kelvinToFahrenheitCalc() {
+  var enteredValue = document.getElementById("KtoFInput").value;
+  enteredValue = parseFloat(enteredValue);
+  var result = 0;
+  result = ((enteredValue - 273.15) * 9) / 5 + 32;
+  document.getElementById("results").innerHTML = result + " Fahrenheit";
+  results.style.display = "block";
+}
+//#endregion
+//#endregion
