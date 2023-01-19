@@ -1,78 +1,8 @@
 body {
   background: #EEF5DB;
 }
-#tempatureConverter {
-  display: block;
-}
-#tempature-menu {
-  display: none;
-}
-#tempature-grid {
-  display: none;
-}
-#temp-go-back {
-  display: none;
-}
-.temp-item {
-  padding: 5px;
-  text-align: center;
-}
-#CtoKInput {
-  margin: 3% 0 0 0;
-  display: none;
-}
-#CtoKSubmit {
-  margin: 3% 0 0 0;
-  display: none;
-}
-#CtoFInput {
-  margin: 3% 0 0 0;
-  display: none;
-}
-#CtoFSubmit {
-  margin: 3% 0 0 0;
-  display: none;
-}
-
-#FtoCInput {
-  margin: 3% 0 0 0;
-  display: none;
-}
-#FtoCSubmit {
-  margin: 3% 0 0 0;
-  display: none;
-}
-#FtoKInput {
-  margin: 3% 0 0 0;
-  display: none;
-}
-#FtoKSubmit {
-  margin: 3% 0 0 0;
-  display: none;
-}
-#KtoCInput {
-  margin: 3% 0 0 0;
-  display: none;
-}
-#KtoCSubmit {
-  margin: 3% 0 0 0;
-  display: none;
-}
-#KtoFInput {
-  margin: 3% 0 0 0;
-  display: none;
-}
-#KtoFSubmit {
-  margin: 3% 0 0 0;
-  display: none;
-}
-#rockPaperScissors { 
-  display: block;
-  margin: 5px 0 0 0;
-}
-.rps {
-  display: none;
-}
-#score {
-  display: none;
+.grid-container {
+  display: grid;
+  grid-template: "auto auto auto";
+  row-gap: 10px;
 }
