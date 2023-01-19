@@ -1,0 +1,15 @@
+body {
+    background: #EEF5DB;
+}
+#score-text {
+text-align: center;
+}
+#score {
+    text-align: center;
+} 
+#result {
+    text-align: center;
+}
+#reset {
+    margin: 3% 0 0 0;
+}

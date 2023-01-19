@@ -66,3 +66,13 @@ body {
   margin: 3% 0 0 0;
   display: none;
 }
+#rockPaperScissors { 
+  display: block;
+  margin: 5px 0 0 0;
+}
+.rps {
+  display: none;
+}
+#score {
+  display: none;
+}
