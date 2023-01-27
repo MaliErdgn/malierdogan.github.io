@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="higherorlower.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Or Lower</title>
+</head>
+<body>
+    <a href="/index.html"><button>Go To Main Menu </button></a>
+    <h2>The computer has choosen a random number between 0-100 (Both Included). Try to guess it.</h2>
+    <input type="number" placeholder="Insert your guess" id="guessInput">
+    <input type="submit" value="Guess!" id="guessSubmit" onclick="takeGuess()">
+    <h4 id="result"></h4>
+    <div class="flex-container">
+        <h4 id="higher">Higher <br></h4>
+        <h4 id= "lower">Lower <br></h4>
+    </div>
+    <button id="reset" onclick="reset()">Reset</button>
+    <script src="higherorlower.js"></script>
+</body>
+</html>

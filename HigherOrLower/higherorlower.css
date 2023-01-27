@@ -1,0 +1,18 @@
+body {
+    background: #EEF5DB;
+  }
+.flex-container {
+    display: flex;
+}
+.flex-container > h4 {
+    margin: auto;
+}
+#lower {
+    color: blue
+}
+#higher {
+     color: red; 
+}
+#reset {
+    margin: 5em 0 0 0;
+}

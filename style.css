@@ -6,7 +6,3 @@ body {
   grid-template: "auto auto auto";
   row-gap: 10px;
 }
-#malipp {
-  display: block;
-  margin: 50px auto auto 0;
-}
