@@ -1,0 +1,17 @@
+body {
+    background-color: #EEF5DB;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1%;
+}
+
+.grid-container > img {
+    width: 10%;
+    height: auto;
+    object-fit:contain;
+}

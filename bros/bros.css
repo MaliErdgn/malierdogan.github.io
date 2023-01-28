@@ -1,0 +1,32 @@
+body {
+    background-color: #EEF5DB;
+}
+
+.grid-container {
+    display: none;
+    grid-template-columns: repeat(3,auto);
+}
+
+.grid-container > div > a > img {
+    object-fit: cover;
+    width: 20vw;
+    height: 60vh;
+}
+.grid-container > div {
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid-container > div > p { 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size:x-large;
+}
+#password {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
