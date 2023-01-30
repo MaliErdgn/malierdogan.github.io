@@ -1,3 +1,23 @@
 body {
     background-color: #EEF5DB;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1%;
+}
+
+.grid-container > video {
+    width: 50%;
+    height: auto;
+    object-fit:contain;
+}
+
+.grid-container > img {
+    width: 50%;
+    height: auto;
+    object-fit:contain;
+}
