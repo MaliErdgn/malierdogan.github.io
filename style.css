@@ -1,8 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 body {
-  background: #EEF5DB;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  min-height: 100vh;
+  background: #222;
 }
 .grid-container {
+  position: relative;
+  max-width: 100%;
   display: grid;
-  grid-template: "auto auto auto";
-  row-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(100px, auto);
+  margin: 40px;
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+}
+
+.grid-container .box {
+  background: #333;
+  padding: 20px;
+  display: grid;
+  font-size: 20px;
+  place-items: center;
+  text-align: center;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.grid-container .box:hover {
+  background: #e91e63
+}
+
+.grid-container div img {
+  position: relative;
+  max-width: 120px;
+  margin-bottom: 10px;
+} 
+
+.grid-container .box:nth-child(1) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.grid-container .box:nth-child(2) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.grid-container .box:nth-child(3) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.grid-container .box:nth-child(4) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.grid-container .box:nth-child(5) {
+  grid-column: span 4;
+  grid-row: span 1;
 }
