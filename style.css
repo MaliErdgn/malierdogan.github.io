@@ -65,3 +65,14 @@ body {
   grid-column: span 4;
   grid-row: span 1;
 }
+
+@media (max-width:991px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
+  }
+  .grid-container .box {
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+}
