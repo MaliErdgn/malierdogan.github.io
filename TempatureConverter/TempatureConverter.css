@@ -45,3 +45,14 @@
 .grid .box:hover {
     background: #e91e63;
 }
+
+@media (max-width:991px) {
+    .grid {
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+      grid-template-rows: minmax(auto, auto);
+    }
+    .main-menu {
+        min-width: 135px;
+        min-height: 50px;
+    }
+  }
