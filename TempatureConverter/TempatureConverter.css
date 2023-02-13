@@ -62,7 +62,9 @@ input::-webkit-inner-spin-button {
     display: none;
     width: 100%;
 }
-
+.resulte {
+    font-size: 30px;
+}
 
 @media (max-width:991px) {
     .grid {
