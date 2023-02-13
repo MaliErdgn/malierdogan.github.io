@@ -45,6 +45,24 @@
 .grid .box:hover {
     background: #e91e63;
 }
+input[type=number]{
+    border: 1px solid #fff;
+    background-color: #222;
+    color: #fff;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.content {
+    width: 100%;
+}
+.sub-menu {
+    display: none;
+    width: 100%;
+}
+
 
 @media (max-width:991px) {
     .grid {
