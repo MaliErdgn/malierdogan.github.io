@@ -15,8 +15,12 @@ const winningMessageTextElement = document.querySelector("[data-winning-message-
 const restartButton = document.getElementById("restartButton")
 const winningMessageElement = document.getElementById("winning-message")
 const board = document.getElementById("board")
+const mainMenu = document.getElementById("main-menu");
 let circleTurn
-
+mainMenu.addEventListener("click",goToMainMenu)
+function goToMainMenu() {
+  window.location.replace("/index.html")
+}
 startGame()
 
 restartButton.addEventListener("click", startGame)
