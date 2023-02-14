@@ -1,10 +1,20 @@
-body {
-    background-color: #EEF5DB;
-}
+@import "/GeneralCss/generalCss.css";
 
 #password {
-    display: block;
+    height: auto;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    margin: auto;
+}
+
+#passwordInput[type=password]{
+    border: 1px solid #333;
+    background-color: #222;
+    color: #fff;
+}
+#passwordSubmit {
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    outline: none;
+    border: none;
 }
