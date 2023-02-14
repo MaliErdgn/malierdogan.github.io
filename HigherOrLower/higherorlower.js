@@ -29,6 +29,7 @@ function takeGuess () {
 
 function reset() {
     answer = Math.floor(Math.random() * 101);
+    guessAmount = 0;
     higher.innerHTML = "Higher <br>"
     lower.innerHTML = "Lower <br>"
     result.innerHTML = ""
