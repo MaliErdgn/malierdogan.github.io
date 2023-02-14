@@ -41,8 +41,8 @@ function takeGuess () {
 function reset() {
     answer = Math.floor(Math.random() * 101);
     guessAmount = 0;
-    higher.innerHTML = "Higher <br>"
-    lower.innerHTML = "Lower <br>"
+    higher.innerHTML = "Higher than the answer<br>"
+    lower.innerHTML = "Lower than the answer<br>"
     result.innerHTML = ""
     amount.innerHTML = "Number of guesses <br>"
 }

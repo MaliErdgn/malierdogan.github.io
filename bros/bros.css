@@ -2,7 +2,8 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(auto-fill);
+    grid-template-rows: minmax(100px, auto);
 }
 
 img {
@@ -18,8 +19,6 @@ img {
     position: relative;
     display: grid;
     max-width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-template-rows: minmax(100px, auto);
     margin: 40px;
     grid-auto-flow: dense;
     grid-gap: 10px;
