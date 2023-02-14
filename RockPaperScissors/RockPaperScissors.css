@@ -11,7 +11,7 @@
     grid-gap: 10px;
   }
   
-  .grid-container  .box {
+.grid-container  .box {
     padding: 20px;
     display: grid;
     font-size: 20px;
@@ -22,25 +22,30 @@
     border: 1px solid #333;
   }
   
-  .grid-container .box:hover {
+.grid-container .box:hover {
     background: #e91e63
   }
   
-  .grid-container div img {
+.grid-container div img {
     position: relative;
     max-width: 120px;
     margin-bottom: 10px;
   } 
-  img {
+img {
     pointer-events: none;
     user-select: none;
   }
-  #reset {
+#reset {
     background-color: #222;
     border: 1px solid #333;
   }
-  #scoreboard {
+
+#scoreboard {
     justify-content:center;
     align-items: center;
     text-align: center;
 }
+#reset:hover {
+  background: #e91e63;
+}
+

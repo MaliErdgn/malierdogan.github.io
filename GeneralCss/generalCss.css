@@ -16,6 +16,7 @@ body {
   font-size: 20px;
   text-align: center;
   transition: 0.5s;
+  user-select: none;
 }
 
 .main-menu:hover {

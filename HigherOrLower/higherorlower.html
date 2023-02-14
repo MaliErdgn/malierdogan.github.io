@@ -9,16 +9,26 @@
     <script src="higherorlower.js" defer></script>
 </head>
 <body>
-    <a href="/index.html"><button>Go To Main Menu </button></a>
+    <div class="main-menu" id="main-menu">
+        <p>&#8592 Go Back To Main Menu</p>
+     </div>
     <h2>The computer has choosen a random number between 0-100 (Both Included). Try to guess it.</h2>
-    <input type="number" placeholder="Insert your guess" id="guessInput">
-    <input type="submit" value="Guess!" id="guessSubmit" onclick="takeGuess()">
-    <h4 id="result"></h4>
-    <div class="flex-container">
-        <h4 id="higher">Higher <br></h4>
-        <h4 id="amount">Number of Guesses <br></h4>
-        <h4 id= "lower">Lower <br></h4>
+    <div id="guessbar">
+        <form action="" onsubmit="return false;">
+            <input type="number" placeholder="Insert your guess" id="guessInput">
+            <input type="submit" value="Guess!"  id="guessSubmit">
+        </form>
+        <h4 id="result"></h4>
     </div>
-    <button id="reset" onclick="reset()">Reset</button>
+    <div class="flex-container">
+        <h4 id="higher">Higher than the answer<br></h4>
+        <h4 id="amount">Number of Guesses <br></h4>
+        <h4 id= "lower">Lower than the answer<br></h4>
+    </div>
+    <div id="resetdiv">
+        <div class="main-menu" id="reset">
+            <p>Reset</p>
+        </div>
+    </div>
 </body>
 </html>
