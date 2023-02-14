@@ -13,7 +13,7 @@ function temperatureConverterRedirect() {
 
 rps.addEventListener("click", rpsRedirect)
 function rpsRedirect() { 
-    window.location.replace("./RockPaperScissors/rockpaperscissors.html")
+    window.location.replace("./RockPaperScissors/RockPaperScissors.html")
 }
 
 hlgame.addEventListener("click", hlgameRedirect)
