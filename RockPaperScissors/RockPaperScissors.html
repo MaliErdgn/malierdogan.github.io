@@ -9,16 +9,35 @@
     <script src="./RockPaperScissors.js" defer></script>   
 </head>
 <body>
-    <a href="/index.html"><button>Go To Main Menu </button></a>
+    <div class="main-menu" id="main-menu">
+        <p>&#8592 Go Back To Main Menu</p>
+     </div>
     <h3>Rock Paper Scissors Game Against Computer</h3>
-    <h2 id="score-text">Score</h2>
-    <h1 id="score">0 - 0</h1>
-    <h4 id="result"></h4>
-    <button onclick="rock()">Rock</button>
-    <button onclick="paper()">Paper</button>
-    <button onclick="scissors()">Scissors</button>
-    <br>
-    <button onclick = "reset()" id = "reset">Reset</button>
+    <div id="scoreboard">
+        <h2 id="score-text">Score</h2>
+        <h1 id="score">0 - 0</h1>
+        <h4 id="result"></h4>
+    </div>
+    <div class="grid-container">
+        <div class="box" id="rock">
+            <div class="content">
+                <img src="/photos/rock.png" alt="rock">
+            </div>
+        </div>
+        <div class="box" id="paper">
+            <div class="content">
+                <img src="/photos/paper.png" alt="paper">
+            </div>
+        </div>
+        <div class="box" id="scissors">
+            <div class="content">
+                <img src="/photos/scissors.png" alt="scissors">
+            </div>
+        </div>
+    </div>
+    <div class="main-menu" id="reset">
+        <p>Reset</p>
+    </div>
  
 </body>
 </html>

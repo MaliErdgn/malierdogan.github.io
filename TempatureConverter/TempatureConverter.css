@@ -1,25 +1,5 @@
 @import "/GeneralCss/generalCss.css";
 
-.main-menu {
-    position: relative;
-    display: flex;
-    margin-top: 0.5%;
-    width: 15vw;
-    height: 5vh;
-    background-color: #333;
-    font-size: 20px;
-    text-align: center;
-    transition: 0.5s;
-}
-
-.main-menu:hover {
-    background: #e91e63;
-}
-
-.main-menu > p {
-    margin: auto;
-}
-
 .grid {
     position: relative;
     display: grid;
@@ -40,6 +20,7 @@
     text-align: center;
     color: #fff;
     transition: 0.5s;
+    transform: 1.0s;
 }
 
 .grid .box:hover {
@@ -61,6 +42,7 @@ input::-webkit-inner-spin-button {
 .sub-menu {
     display: none;
     width: 100%;
+    overflow: hidden;
 }
 .resulte {
     font-size: 30px;
@@ -75,4 +57,4 @@ input::-webkit-inner-spin-button {
         min-width: 135px;
         min-height: 50px;
     }
-  }
+}

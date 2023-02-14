@@ -1,15 +1,46 @@
-body {
-    background: #EEF5DB;
-}
-#score-text {
-text-align: center;
-}
-#score {
+@import "/GeneralCss/generalCss.css";
+
+.grid-container {
+    position: relative;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+  }
+  
+  .grid-container  .box {
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
     text-align: center;
-} 
-#result {
+    color: #fff;
+    transition: 0.5s;
+    border: 1px solid #333;
+  }
+  
+  .grid-container .box:hover {
+    background: #e91e63
+  }
+  
+  .grid-container div img {
+    position: relative;
+    max-width: 120px;
+    margin-bottom: 10px;
+  } 
+  img {
+    pointer-events: none;
+    user-select: none;
+  }
+  #reset {
+    background-color: #222;
+    border: 1px solid #333;
+  }
+  #scoreboard {
+    justify-content:center;
+    align-items: center;
     text-align: center;
-}
-#reset {
-    margin: 3% 0 0 0;
 }
