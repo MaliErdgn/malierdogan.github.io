@@ -1,5 +1,10 @@
 @import "/GeneralCss/generalCss.css";
-
+* {
+    user-select: none;
+}
+.resulte {
+    user-select: all;
+}
 .grid {
     position: relative;
     display: grid;
