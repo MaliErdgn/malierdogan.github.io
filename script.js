@@ -3,6 +3,7 @@ const rps = document.getElementById("rps") // rockpaperscissors
 const hlgame = document.getElementById("hlgame") //higher or lower game
 const ttt = document.getElementById("ttt") // tictactoe
 const bros = document.getElementById("bros") //bros
+const euler = document.getElementById("euler") //project euler
 
 
 
@@ -30,3 +31,7 @@ bros.addEventListener("click", brosRedirect)
 function brosRedirect(){
     window.location.replace("./bros/broslogin.html")
 }
+
+euler.addEventListener("click", function(){
+    window.location.replace("/ProjectEuler/projecteuler.html")
+})
