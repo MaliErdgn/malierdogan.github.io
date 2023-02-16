@@ -1,1 +1,44 @@
 @import "/GeneralCss/generalCss.css";
+
+.grid-container {
+    position: relative;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 49.7%));
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+
+.grid-container  .box {
+    background: #333;
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.grid-container .box:hover {
+    background: #e91e63
+}
+.grid-container div img {
+    position: relative;
+    max-width: 100px;
+    margin-bottom: 10px;
+} 
+
+em {
+    font-size: 30px;
+}
+
+#explanation {
+    display: none;
+}
+
+#question-one-list {
+    text-align:left ;
+}

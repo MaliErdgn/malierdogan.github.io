@@ -13,13 +13,32 @@
         <p>&#8592 Go Back To Main Menu</p>
      </div>
      <div class="grid-container">
-        <div class="box">
-            <div class="content"></div>
+        <div class="box" id="one">
+            <div class="content">
+                <img src="./phtotos/one.png" alt="one">
+                <p>Question: <br> 
+                    If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+                    <br> <br>
+                    <em>Find the sum of all the multiples of 3 or 5 below 1000.</em></p>
+                    <p>Answer: <br>
+                        <em id="answer1"></em>
+                    </p>
+                    <p>Click to see explanation</p>
+                    <div id="explanation">
+                        <p>So the question asks us to find the numbers that can be divided by either 3 or 5.</p>
+                        <p>To do that, we should;</p>
+                        <ol id="question-one-list">
+                            <li>Create a for loop that is in range of 0-1000</li> <br>
+                            <li>Construct a if statement that checks if the number is divisible by 3, else 5.</li><br>
+                            <li>We dont need to substract the numbers that can be divided by both 3 and 5 beacuse the if statement wont take those numbers into consideration since it will exit the if statement after it sees that number is divisible by 3, therefore not checking if it's divisible by 5.</li>
+                        </ol>
+                    </div>
+            </div>
         </div>
         <div class="box">
-            <div class="content"></div>
+            <div class="content" id="two"></div>
         </div>
-        <div class="box">
+        <div class="box" id="three">
             <div class="content"></div>
         </div>
      </div>
