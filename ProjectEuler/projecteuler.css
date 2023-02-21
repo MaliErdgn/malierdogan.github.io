@@ -37,10 +37,26 @@ em {
     font-size: 30px;
 }
 
-#explanation {
-    display: none;
+.explanation {
+    height: 0;
+    width: 0;
+    transition: 0.5s;
+    scale: 0;
+    opacity: 0;
 }
 
-#question-one-list {
+.explanation-list {
     text-align:left ;
+}
+
+.fadeIn {
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
 }
