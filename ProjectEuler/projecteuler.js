@@ -1,7 +1,10 @@
 const mainMenu = document.getElementById("main-menu");
 const answer1 = document.getElementById("answer1")
 const one = document.getElementById("one");
-const explanation = document.querySelector(".explanation")
+const clickToSee = document.querySelector(".click-to-see");
+const explanation = document.querySelector(".explanation");
+const content = document.querySelector(".content");
+const box = document.querySelectorAll(".box");
 
 mainMenu.addEventListener("click",goToMainMenu)
 function goToMainMenu() {
@@ -11,14 +14,16 @@ function goToMainMenu() {
 var isExplanationOn = false;
 one.addEventListener("click", function(){
   if (isExplanationOn == false){
-    explanation.style.height = "auto"
+    explanation.style.height = "fit-content";
     explanation.style.width = "inherit"
-    explanation.classList.add("fadeIn")
+    explanation.classList.add("fadeIn");
+    contentHovered.style.setProperty("--content-background-color", "#e96390")
     isExplanationOn = true;
   } else {
     explanation.style.width = "0"
     explanation.style.height = "0"
     explanation.classList.remove("fadeIn")
+    contentHovered.style.setProperty("--content-background-color", "#e91e63")
     isExplanationOn = false;
   }
 })
