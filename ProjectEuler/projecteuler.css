@@ -30,8 +30,11 @@
     transition: 0.5s;
 }
 
-.grid-container .box:hover {
+.grid-container .hoverBright:hover {
     background: var(--content-background-color);
+}
+.grid-container .hoverDim:hover {
+    background-color: #7a3049;
 }
 .grid-container div img {
     position: relative;
