@@ -1,8 +1,12 @@
+window.onload = function(){
+
 const mainMenu = document.getElementById("main-menu");
-const answer1 = document.getElementById("answer1")
+const answer1 = document.getElementById("answer1");
+const answer2 = document.getElementById("answer2");
 const one = document.getElementById("one");
-const clickToSee = document.querySelector(".click-to-see");
-const explanation = document.querySelector(".explanation");
+const two = document.getElementById("two");
+const explanationOne = document.querySelector("#explanation-one");
+const explanationTwo = document.querySelector("#explanation-two");
 const content = document.querySelector(".content");
 const firstDim = document.querySelector("#one");
 const secondDim = document.querySelector("#two");
@@ -13,22 +17,41 @@ function goToMainMenu() {
   window.location.replace("/index.html")
 }
 
-var isExplanationOn = false;
+var isExplanationOneOn = false;
 one.addEventListener("click", function(){
-  if (isExplanationOn == false){
-    explanation.style.height = "fit-content";
-    explanation.style.width = "inherit"
-    explanation.classList.add("fadeIn");
+  if (isExplanationOneOn == false){
+    explanationOne.style.height = "fit-content";
+    explanationOne.style.width = "inherit"
+    explanationOne.classList.add("fadeIn");
     firstDim.classList.add("hoverDim");
     firstDim.classList.remove("hoverBright");
-    isExplanationOn = true;
+    isExplanationOneOn = true;
   } else {
-    explanation.style.width = "0"
-    explanation.style.height = "0"
-    explanation.classList.remove("fadeIn");
+    explanationOne.style.width = "0"
+    explanationOne.style.height = "0"
+    explanationOne.classList.remove("fadeIn");
     firstDim.classList.remove("hoverDim");
     firstDim.classList.add("hoverBright");
-    isExplanationOn = false;
+    isExplanationOneOn = false;
+  }
+})
+
+var isExplanationTwoOn = false;
+two.addEventListener("click", function(){
+  if (isExplanationTwoOn == false){
+    explanationTwo.style.height = "fit-content";
+    explanationTwo.style.width = "inherit";
+    explanationTwo.classList.add("fadeIn");
+    firstDim.classList.add("hoverDim");
+    firstDim.classList.remove("hoverBright");
+    isExplanationTwoOn = true;
+  } else {
+    explanationTwo.style.width = "0";
+    explanationTwo.style.height = "0";
+    explanationTwo.classList.remove("fadeIn");
+    firstDim.classList.remove("hoverDim");
+    firstDim.classList.add("hoverBright");
+    isExplanationTwoOn = false;
   }
 })
 
@@ -63,4 +86,8 @@ do {
   fibonacciNextTerm = fibonacci1 + fibonacci2;
 } while (fibonacciNextTerm < 4000000)
 
+answer2.innerText = questionTwoAnswer;
+
 //#endregion
+
+}

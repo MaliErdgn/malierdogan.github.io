@@ -12,6 +12,8 @@
     max-width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(400px, 45%));
     grid-template-rows: minmax(100px, auto);
+    grid-auto-rows: auto;
+    height: 100%;
     margin: 2%;
     margin-left: auto;
     margin-right: auto;
@@ -46,7 +48,8 @@ em {
     font-size: 30px;
 }
 
-.explanation {
+#explanation-one,
+#explanation-two {
     height: 0;
     width: 0;
     transition: 0.5s;
@@ -58,7 +61,8 @@ em {
     overflow: hidden;
 }
 
-.explanation-list {
+#explanation-one-list,
+#explanation-two-list {
     text-align:left ;
 }
 
