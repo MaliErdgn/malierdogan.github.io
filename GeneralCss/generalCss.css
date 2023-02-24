@@ -9,14 +9,16 @@ body {
 .main-menu {
   position: relative;
   display: flex;
-  margin-top: 0.5%;
-  width: 15vw;
-  height: 5vh;
+  padding: 2vh;
+  margin-left: 1vh;
+  width: fit-content;
+  height: 8vh;
   background-color: #333;
   font-size: 20px;
   text-align: center;
   transition: 0.5s;
   user-select: none;
+  border-radius: 50%;
 }
 
 .main-menu:hover {
@@ -26,9 +28,14 @@ body {
 .main-menu > p {
   margin: auto;
 }
+
+.navbar {
+  display: flex;
+  margin-left: 4vw;
+}
+
 @media (max-width:991px) {
   .main-menu {
-      min-width: 135px;
-      min-height: 50px;
+      min-width: fit-content;
   }
 }
