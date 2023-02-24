@@ -20,7 +20,7 @@ function goToMainMenu() {
 var isExplanationOneOn = false;
 one.addEventListener("click", function(){
   if (isExplanationOneOn == false){
-    explanationOne.style.height = "fit-content";
+    explanationOne.style.height = "auto";
     explanationOne.style.width = "inherit"
     explanationOne.classList.add("fadeIn");
     firstDim.classList.add("hoverDim");
@@ -39,18 +39,18 @@ one.addEventListener("click", function(){
 var isExplanationTwoOn = false;
 two.addEventListener("click", function(){
   if (isExplanationTwoOn == false){
-    explanationTwo.style.height = "fit-content";
+    explanationTwo.style.height = "auto";
     explanationTwo.style.width = "inherit";
     explanationTwo.classList.add("fadeIn");
-    firstDim.classList.add("hoverDim");
-    firstDim.classList.remove("hoverBright");
+    secondDim.classList.add("hoverDim");
+    secondDim.classList.remove("hoverBright");
     isExplanationTwoOn = true;
   } else {
     explanationTwo.style.width = "0";
     explanationTwo.style.height = "0";
     explanationTwo.classList.remove("fadeIn");
-    firstDim.classList.remove("hoverDim");
-    firstDim.classList.add("hoverBright");
+    secondDim.classList.remove("hoverDim");
+    secondDim.classList.add("hoverBright");
     isExplanationTwoOn = false;
   }
 })
