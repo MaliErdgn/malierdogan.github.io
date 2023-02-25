@@ -6,11 +6,6 @@
     grid-template-rows: minmax(100px, auto);
 }
 
-img {
-    object-fit: cover;
-    width: 20vw;
-    height: 60vh;
-}
 .grid-container > div {
     justify-content: center;
     align-items: center;

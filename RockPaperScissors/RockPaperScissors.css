@@ -1,5 +1,9 @@
 @import "/GeneralCss/generalCss.css";
 
+h3 {
+  text-align: center;
+}
+
 .grid-container {
     position: relative;
     display: grid;
@@ -36,8 +40,14 @@ img {
     user-select: none;
   }
 #reset {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  place-items: center;
     background-color: #222;
     border: 1px solid #333;
+    border-radius: 0;
   }
 
 #scoreboard {

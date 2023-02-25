@@ -1,4 +1,3 @@
-const mainMenu = document.getElementById("main-menu");
 
 const CtoK = document.getElementById("CtoK");
 const CtoKinputMenu = document.getElementById("CtoK-input-menu");
@@ -28,10 +27,6 @@ const KtoFinput = document.getElementById("KtoF-input");
 var enteredValue;
 var result = "0";
 
-mainMenu.addEventListener("click",goToMainMenu)
-function goToMainMenu() {
-  window.location.replace("/index.html")
-}
 
 CtoK.addEventListener("click", showCtoK)
 CtoKinput.addEventListener("input", CtoKCalc)

@@ -9,29 +9,29 @@ const euler = document.getElementById("euler") //project euler
 
 temperatureConverter.addEventListener("click", temperatureConverterRedirect)
 function temperatureConverterRedirect() {
-    window.location.replace("./TempatureConverter/TempatureConverter.html")
+    window.location.href = "./TempatureConverter/TempatureConverter.html"
 }
 
 rps.addEventListener("click", rpsRedirect)
 function rpsRedirect() { 
-    window.location.replace("./RockPaperScissors/RockPaperScissors.html")
+    window.location.href = "./RockPaperScissors/RockPaperScissors.html";
 }
 
 hlgame.addEventListener("click", hlgameRedirect)
 function hlgameRedirect() {
-    window.location.replace("./HigherOrLower/higherorlower.html")
+    window.location.href = "./HigherOrLower/higherorlower.html";
 }
 
 ttt.addEventListener("click", tttRedirect)
 function tttRedirect() {
-    window.location.replace("./tictactoe/tictactoe.html")
+    window.location.href = "./tictactoe/tictactoe.html";
 }
 
 bros.addEventListener("click", brosRedirect)
 function brosRedirect(){
-    window.location.replace("./bros/broslogin.html")
+    window.location.href = "./bros/broslogin.html";
 }
 
 euler.addEventListener("click", function(){
-    window.location.replace("/ProjectEuler/projecteuler.html")
+    window.location.href = "/ProjectEuler/projecteuler.html";
 })

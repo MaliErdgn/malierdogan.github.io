@@ -1,13 +1,9 @@
-const mainMenu = document.getElementById("main-menu");
 const _rock = document.getElementById("rock");
 const _paper = document.getElementById("paper");
 const _scissors = document.getElementById("scissors");
 const _reset = document.getElementById("reset");
 
-mainMenu.addEventListener("click",goToMainMenu)
-function goToMainMenu() {
-  window.location.replace("/index.html")
-}
+
 let playerScore = 0;
 let cpuScore = 0;
 let choices = ["rock","paper","scissors"]

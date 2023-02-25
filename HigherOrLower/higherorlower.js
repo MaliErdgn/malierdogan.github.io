@@ -1,4 +1,3 @@
-const mainMenu = document.getElementById("main-menu");
 const guessInput = document.getElementById("guessInput");
 const guessSubmit = document.getElementById("guessSubmit");
 const result = document.getElementById("result");
@@ -8,10 +7,6 @@ const amount = document.getElementById("amount");
 const _reset = document.getElementById("reset")
 
 
-mainMenu.addEventListener("click",goToMainMenu)
-function goToMainMenu() {
-  window.location.replace("/index.html")
-}
 guessSubmit.addEventListener("click", takeGuess)
 _reset.addEventListener("click", reset)
 

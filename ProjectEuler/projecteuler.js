@@ -1,7 +1,5 @@
 window.onload = function(){
 
-const mainMenu = document.getElementById("main-menu");
-const goBack = document.getElementById("go-back");
 const answer1 = document.getElementById("answer1");
 const answer2 = document.getElementById("answer2");
 const one = document.getElementById("one");
@@ -12,15 +10,6 @@ const content = document.querySelector(".content");
 const firstDim = document.querySelector("#one");
 const secondDim = document.querySelector("#two");
 const thirdDim = document.querySelector("#three");
-
-mainMenu.addEventListener("click",goToMainMenu)
-function goToMainMenu() {
-  window.location.replace("/index.html")
-}
-goBack.addEventListener("click", function() {
-  window.location.replace("/index.html")
-})
-
 
 var isExplanationOneOn = false;
 one.addEventListener("click", function(){
